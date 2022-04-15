@@ -1,12 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect } from "react";
+// import ConfigSelector from "./utilities/configSelector";
+
+import About from "./sections/about";
+import Hero from "./sections/hero";
+import Header from "./sections/header";
+
+import "./App.css";
 
 function App() {
+  useEffect(() => {}, []);
   return (
     <div className="App">
-      <h1 className="text-6xl font-regular bg-cyan-100 w-min">
-        Hello worl
-      </h1>
+      <Header />
+      <Hero />
+      <About />
     </div>
   );
 }

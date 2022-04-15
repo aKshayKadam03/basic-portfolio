@@ -1,8 +1,10 @@
-const config = {
-  personal: {
-    profilePicture: '',
-    first_name: 'Sharan',
-    last_name: 'D',
+export default {
+  profile: {
+    picture: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    firstName: 'Sharan',
+    lastName: 'D',
+    tagLine: 'Hi my name is',
+    headLine: 'Full Stack Developer',
     age: '25',
     about:
       'Observent and innovatice full stack developer having specialized in MERN stack. Collaborative team player. I have a strong motive to make myself a valued asset and passionate about learning new skills',
@@ -163,4 +165,3 @@ const config = {
   },
 };
 
-window.root = config;
