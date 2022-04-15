@@ -1,12 +1,12 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <h1 className="text-6xl font-regular bg-cyan-100 w-min">
-      Hello world!
-    </h1>
+        Hello worl
+      </h1>
     </div>
   );
 }
