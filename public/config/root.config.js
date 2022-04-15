@@ -1,5 +1,6 @@
 const config = {
   personal: {
+    profilePicture: "",
     first_name: "Sharan",
     last_name: "D",
     age: "24",
