@@ -3,7 +3,7 @@ const config = {
     profilePicture: '',
     first_name: 'Sharan',
     last_name: 'D',
-    age: '24',
+    age: '25',
     about:
       'Observent and innovatice full stack developer having specialized in MERN stack. Collaborative team player. I have a strong motive to make myself a valued asset and passionate about learning new skills',
   },
