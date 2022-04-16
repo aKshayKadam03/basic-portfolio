@@ -1,9 +1,9 @@
 import React from 'react'
+import { animateScroll, Link } from 'react-scroll/modules'
 import ConfigSelector from '../../utilities/configSelector'
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function Header() {
-    const { firstName } = ConfigSelector.getProfile()
+  const { firstName, resume } = ConfigSelector.getProfile()
   return (
     <nav className='
                 sticky
@@ -19,15 +19,55 @@ function Header() {
                 px-5
                 '
     >
-        <h2 className='font-semibold tracking-wider text-lg'>
-            {firstName}.
-        </h2>
-        <ul className='flex justify-evenly items-center gap-4'>
-            <li className='cursor-pointer'>Skills</li>
-            <li className='cursor-pointer'>Projects</li>
-            <li className='cursor-pointer'>Contact</li>
-            <li className='cursor-pointer bg-blue-800 text-white p-2 rounded font-medium hover:bg-yellow-300 hover:text-black'>Resume</li>
-        </ul>
+      <h2
+        className='font-semibold tracking-wider text-lg cursor-pointer'
+        onClick={() => animateScroll.scrollToTop()}
+      >
+        {firstName}.
+      </h2>
+      <ul className='flex justify-evenly items-center gap-6'>
+        <Link
+          activeClass="border-b-4 border-blue-800"
+          className='mx-2 my-2 bg-white rounded'
+          to="skills"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <li className='cursor-pointer'>
+            Skills
+          </li>
+        </Link>
+        <Link
+          activeClass="border-b-4 border-blue-800"
+          className='mx-2 my-2 bg-white rounded'
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <li className='cursor-pointer'>Projects</li>
+        </Link>
+        <Link
+          activeClass="border-b-4 border-blue-800"
+          className='mx-2 my-2 bg-white rounded'
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <li className='cursor-pointer'>
+            Contact
+          </li>
+        </Link>
+        <a
+          href={resume}
+          rel="noreferrer"
+          target="_blank"
+          className='cursor-pointer bg-blue-800 text-white p-2 rounded font-medium hover:bg-yellow-300 hover:text-black'>
+          Resume
+        </a>
+      </ul>
     </nav>
   )
 }

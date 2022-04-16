@@ -24,6 +24,10 @@ class ConfigSelector{
   static getContact(){
       return config.contact
   }
+
+  static getFooter(){
+    return config.footer
+  }
 }
 
 

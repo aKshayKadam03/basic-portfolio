@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-// import ConfigSelector from "./utilities/configSelector";
+// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 
-import About from "./sections/about";
+import Skills from "./sections/skills";
 import Hero from "./sections/hero";
 import Header from "./sections/header";
+import Footer from "./sections/footer";
 
 import "./App.css";
+import Project from "./sections/projects";
+import Contact from "./sections/contact";
 
 function App() {
   useEffect(() => {}, []);
@@ -13,7 +16,10 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <About />
+      <Skills />
+      <Project />
+      <Contact />
+      <Footer />
     </div>
   );
 }
