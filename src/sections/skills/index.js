@@ -1,5 +1,6 @@
 import React from 'react'
 import Element from 'react-scroll/modules/components/Element'
+import SectionHead from '../../components/section-head'
 import ConfigSelector from '../../utilities/configSelector'
 
 function Skills() {
@@ -8,11 +9,12 @@ function Skills() {
   return (
     <Element name="skills">
       <div className='container mx-auto my-24'>
-      <div className='flex flex-row-reverse'>
-        <h2 className='mb-10 font-semibold text-gray-800 text-lg px-2 uppercase bg-gray-300 rounded w-fit '>
+        <SectionHead
+          direction="reverse"
+        >
           Skillset
-        </h2>
-        </div>
+          </SectionHead>
+
         <div>
           <div className='flex mt-2 gap-4 items-center'>
             <h2 className='border-2 py-6 px-2 rounded  text-center text-slate-100 text-4xl capitalize w-2/12 min-w-fit'>

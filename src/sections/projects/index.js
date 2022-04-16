@@ -2,6 +2,7 @@ import React from 'react'
 import Element from 'react-scroll/modules/components/Element'
 
 import Card from '../../components/card'
+import SectionHead from '../../components/section-head'
 
 import ConfigSelector from '../../utilities/configSelector'
 
@@ -11,9 +12,9 @@ function Project() {
   return (
     <Element name="projects">
       <div className='container mx-auto my-24'>
-          <h2 className='mb-10 font-semibold text-gray-800 text-lg px-2 uppercase bg-gray-300 rounded w-fit'>
+          <SectionHead>
             Projects
-          </h2>
+          </SectionHead>
          <div className='text-6xl text-white'>
           {description}
         </div>
