@@ -173,12 +173,13 @@ export default {
   },
   contact: {
     enabled: true,
+    description: "Get in touch",
     details: {
       email: 'sharan.d1997@gmail.com',
       phone: '8050926778',
       linkedin: 'https://www.linkedin.com/in/sharandooganavar/',
       medium: 'https://medium.com/@sharan.d1997',
-      twitter: '',
+      github: 'https://github.com/sharanweb'
     }
   },
   footer: {

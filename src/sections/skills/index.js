@@ -10,7 +10,6 @@ function Skills() {
     <Element name="skills">
       <div className='container mx-auto my-24'>
         <SectionHead
-          direction="reverse"
         >
           Skillset
           </SectionHead>

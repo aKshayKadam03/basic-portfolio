@@ -27,10 +27,11 @@ function Header() {
       </h2>
       <ul className='flex justify-evenly items-center gap-6'>
         <Link
-          activeClass="border-b-4 border-blue-800"
+          // activeClass="border-b-4 border-blue-800"
           className='mx-2 my-2 bg-white rounded'
           to="skills"
           spy={true}
+          offset={-100}
           smooth={true}
           duration={500}
         >
@@ -39,21 +40,23 @@ function Header() {
           </li>
         </Link>
         <Link
-          activeClass="border-b-4 border-blue-800"
+          // activeClass="border-b-4 border-blue-800"
           className='mx-2 my-2 bg-white rounded'
           to="projects"
           spy={true}
+          offset={-100}
           smooth={true}
           duration={500}
         >
           <li className='cursor-pointer'>Projects</li>
         </Link>
         <Link
-          activeClass="border-b-4 border-blue-800"
+          // activeClass="border-b-4 border-blue-800"
           className='mx-2 my-2 bg-white rounded'
           to="contact"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={500}
         >
           <li className='cursor-pointer'>
